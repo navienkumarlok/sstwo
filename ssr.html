@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTTP Request Example</title>
+</head>
+<body>
+
+<script>
+  fetch("https://houxwvaybvunxfssxolbif0l5px2x0cyq.oast.fun/data")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+</script>
+
+</body>
+</html>
